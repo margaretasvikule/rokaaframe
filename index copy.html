@@ -1,0 +1,30 @@
+
+<html>
+  <head>
+    <script src="aframe180.min.js"></script>
+  </head>
+  <body>
+
+    <a-scene>
+
+
+      <a-plane material="src: /bilzas/parkets.jpg; repeat: 10 10" height="100" width="100" rotation="-90 0 0"></a-plane>
+      <a-gltf-model id="gulosameica" src="/objeki/gulosameica.glb" position="7.502 1.68 0" gltf-model="/objeki/gulosameica.glb"></a-gltf-model>
+      <a-gltf-model id="tv" src="/objeki/tv.glb" position="5.529 3 0" gltf-model="/objeki/tv.glb"></a-gltf-model> 
+
+    
+
+      <a-entity camera="" position="-0.281 50 -3.053" rotation="-90 0 0" id="kamera"></a-entity>
+      
+      <a-sky color="#6EBAA7"></a-sky>
+
+<!-- Kopējais telpas apgaismojums -->
+      <a-entity light="type: ambient; color: #ffffff; intensity: 0.65"></a-entity>
+
+<!-- Virziena gaisma -->
+<a-entity light="type: directional; color: #fff1dc; intensity: 1.2; castShadow: true" position="-5 10 5"></a-entity>
+
+
+    </a-scene>
+  </body>
+</html>

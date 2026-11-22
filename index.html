@@ -10,11 +10,12 @@
 
     <a-scene>
 
-      <a-gltf-model id="vecatelpa" src="/objeki/vecatelpa.glb" position="182.854 3 0" gltf-model="/objeki/vecatelpa.glb"></a-gltf-model>
-    
+    <a-gltf-model id="navmesh" src="/objeki/navmesh.glb" position="0 3 0" navmesh="" gltf-model="objekti\mesh.glb" visible="false"></a-gltf-model>
 
-     <a-entity id="rig" position="-0.286 114.38 -3.357" ><a-camera id="camera"></a-camera></a-entity>
-     <a-entity camera="" look-controls="pointerLockEnabled: true" simple-navmesh-constraint="navmesh: #navmesh; height: 1.10" position="2.037826675625702 1.272443270595411 2.1884047237203976" rotation="-0.3437746770784651 182.88812820575822 0"></a-entity>
+     <a-gltf-model id="vecatelpa" src="/objeki/vecatelpa.glb" position="182.854 3 0" gltf-model="/objeki/vecatelpa.glb"></a-gltf-model>
+    
+     <a-entity id="rig" movement-controls="speed: 1" rotation="0 0 0" position="-0.286 15 -3.357" gamepad-controls="" trackpad-controls="" keyboard-controls="" touch-controls="">
+     <a-entity camera="" look-controls="enabled: true" simple-navmesh-constraint="navmesh: #navmesh; height: 1.10" position="-0.286 114.38 -3.357" rotation="-0.3437746770784651 182.88812820575822 0"></a-entity>
      <a-sky color="#6EBAA7"></a-sky>
 
 <!-- Kopējais telpas apgaismojums -->

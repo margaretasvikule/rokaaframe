@@ -9,11 +9,13 @@
   <body>
 
     <a-scene>
+<!-- Navmesh -->
+     <a-gltf-model id="navmesh" src="/objeki/navmesh.glb" position="0 5 0" navmesh="" gltf-model="objekti\mesh.glb" visible="false"></a-gltf-model>
 
-    <a-gltf-model id="navmesh" src="/objeki/navmesh.glb" position="0 5 0" navmesh="" gltf-model="objekti\mesh.glb" visible="false"></a-gltf-model>
-
-     <a-gltf-model id="vecatelpa" src="/objeki/vecatelpa.glb" position="182.854 3 0" gltf-model="/objeki/vecatelpa.glb"></a-gltf-model>
+<!-- Objekti -->
+     <a-gltf-model id="vecatelpa1" src="/objeki/vecatelpa1.glb" position="182.854 3 0" gltf-model="/objeki/vecatelpa.glb"></a-gltf-model>
     
+<!-- Pārvietošanās -->
      <a-entity id="rig" movement-controls="speed: 1" rotation="0 0 0" position="-0.286 15 -3.357" gamepad-controls="" trackpad-controls="" keyboard-controls="" touch-controls="">
      <a-entity camera="" look-controls="enabled: true" simple-navmesh-constraint="navmesh: #navmesh; height: 1.10" position="-0.286 114.38 -3.357" rotation="-0.3437746770784651 182.88812820575822 0"></a-entity>
      <a-sky color="#6EBAA7"></a-sky>
@@ -22,7 +24,7 @@
       <a-entity light="type: ambient; color: #ffffff; intensity: 0.65"></a-entity>
 
 <!-- Virziena gaisma -->
-<a-entity light="type: directional; color: #fff1dc; intensity: 1.2; castShadow: true" position="-5 10 5"></a-entity>
+     <a-entity light="type: directional; color: #fff1dc; intensity: 1.2; castShadow: true" position="-5 10 5"></a-entity>
 
 
     </a-scene>

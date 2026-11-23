@@ -1,39 +1,39 @@
 
 <html>
-  <head>
+ <head>
     <script src="aframe180.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.7.0/dist/aframe-extras.min.js"></script>
     <script src="simple-navmesh-constraint.js"></script>
-  </head>
+ </head>
   <body>
 
-    <a-scene>
+   <a-scene>
 <!-- Navmesh -->
-     <a-gltf-model id="navmesh" position="0 0 0" navmesh gltf-model="objeki/navmesh.glb" visible="false"></a-gltf-model>
+      <a-gltf-model id="navmesh" position="0 0 0" navmesh gltf-model="objeki/navmesh.glb" visible="false"></a-gltf-model>
 
 <!-- Objekti -->
-     <a-gltf-model id="vecatelpa1" position="0 0 0" gltf-model="/objeki/vecatelpa2.glb"></a-gltf-model>
+      <a-gltf-model id="vecatelpa1" position="0 0 0" gltf-model="/objeki/vecatelpa2.glb"></a-gltf-model>
 
 <!-- Bildes -->   
-     <a-image src="/bildes/gertrude.jpg" position="1.506 1.15 -0.573" rotation="0 90 0" geometry="height: 0.75; width: 1.5" scale="0.2 0.3 1"></a-image>
-<a-image src="/bildes/elvita.jpg" position="1.506 1.132 -0.156" rotation="0 90 0" geometry="height: 0.75; width: 1.5" scale="0.2 0.3 1"></a-image>     <a-image src="/bildes/anna.jpg" position="1.258 1.15 1.729" rotation="0 90 0" geometry="height: 0.75; width: 1.5" scale="0.2 0.3 1"></a-image>
-     <a-image src="/bildes/krisjanis.jpg" position="1.506 1.15 2.837" rotation="0 90 0" geometry="height: 0.75; width: 1.5" scale="0.2 0.3 1"></a-image>
-     <a-image src="/bildes/margareta.jpg" position="1.506 1.15 3.946" rotation="0 90 0" geometry="height: 0.75; width: 1.5" scale="0.2 0.3 1"></a-image>
-     <a-image src="/bildes/oto.jpg" position="1.506 1.15 5.048" rotation="0 90 0" geometry="height: 0.75; width: 1.5" scale="0.2 0.3 1"></a-image>
-     <a-image src="/bildes/sofija.jpg" position="1.506 1.15 6.157" rotation="0 90 0" geometry="height: 0.75; width: 1.5" scale="0.2 0.3 1"></a-image>
-
+      <a-image src="/bildes/gertrude.jpg" position="1.485 0.887 -0.342" rotation="0 90 0" geometry="height: 0.75; width: 1.5" scale="0.2 0.3 1"></a-image>
+      <a-image src="/bildes/elvita.jpg" position="1.485 1.171 -0.156" rotation="0 90 0" geometry="height: 0.75; width: 1.5" scale="0.2 0.3 1"></a-image>
+      <a-image src="/bildes/anna.jpg" position="1.485 1.073 0.205" rotation="0 90 0" geometry="height: 0.75; width: 1.5" scale="0.2 0.3 1"></a-image>
+      <a-image src="/bildes/krisjanis.jpg" position="1.485 1.223 0.576" rotation="0 90 0" geometry="height: 0.75; width: 1.5" scale="0.2 0.3 1"></a-image>   
+      <a-image src="/bildes/margareta.jpg" position="1.485 1.062 0.898" rotation="0 90 0" geometry="height: 0.75; width: 1.5" scale="0.2 0.3 1"></a-image>
+      <a-image src="/bildes/oto.jpg" position="1.485 1.15 1.223" rotation="0 90 0" geometry="height: 0.75; width: 1.5" scale="0.2 0.3 1"></a-image>
+      <a-image src="/bildes/sofija.jpg" position="1.485 0.914 1.368" rotation="0 90 0" geometry="height: 0.75; width: 1.5" scale="0.2 0.3 1"></a-image>
 <!-- Pārvietošanās -->
-     <a-entity id="rig" simple-navmesh-constraint="navmesh: #navmesh; height: 0" movement-controls="speed: 0.1" rotation="0 0 0" position="0 0 0" gamepad-controls="" trackpad-controls="" keyboard-controls="" touch-controls="">
-     <a-entity camera="" look-controls="enabled: true" position="0 1.1 0"></a-entity>
-     <a-sky color="#6EBAA7"></a-sky>
+       <a-entity id="rig" simple-navmesh-constraint="navmesh: #navmesh; height: 0" movement-controls="speed: 0.1" rotation="0 0 0" position="0 0 0" gamepad-controls="" trackpad-controls="" keyboard-controls="" touch-controls="">
+       <a-entity camera="" look-controls="enabled: true" position="0 1.1 0"></a-entity>
+       <a-sky color="#6EBAA7"></a-sky>
 
 <!-- Kopējais telpas apgaismojums -->
-      <a-entity light="type: ambient; color: #ffffff; intensity: 0.65"></a-entity>
+       <a-entity light="type: ambient; color: #ffffff; intensity: 0.65"></a-entity>
 
 <!-- Virziena gaisma -->
-     <a-entity light="type: directional; color: #fff1dc; intensity: 1.2; castShadow: true" position="-5 10 5"></a-entity>
+      <a-entity light="type: directional; color: #fff1dc; intensity: 1.2; castShadow: true" position="-5 10 5"></a-entity>
 
 
-    </a-scene>
+   </a-scene>
   </body>
 </html>
